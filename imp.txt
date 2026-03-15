@@ -1,0 +1,6 @@
+toshiba satellite A200, model no PSAFCA -01C00J
+
+T20 - 5v
+T11 - Data
+T10 - Clock
+T23 - GND
