@@ -1,4 +1,5 @@
 toshiba satellite A200, model no PSAFCA -01C00J
+synaptics 920-000707-01 RevA
 
 T20 - 5v
 T11 - Data
