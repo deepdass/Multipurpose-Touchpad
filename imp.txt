@@ -1,7 +1,14 @@
 toshiba satellite A200, model no PSAFCA -01C00J
 synaptics 920-000707-01 RevA
 
+<<<<<<< Updated upstream
 T20 - 5v
 T11 - Data
 T10 - Clock
 T23 - GND
+=======
+T20 - 5v - red
+T11 - Data - D5 - brown
+T10 - Clock - D6 - yellow
+T23 - GND - blue
+>>>>>>> Stashed changes
