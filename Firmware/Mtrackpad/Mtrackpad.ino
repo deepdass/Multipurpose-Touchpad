@@ -171,16 +171,19 @@ void loop()
   char mx;
   char my;
 
-  mouse_write(0xeb);
-  mouse_read();       // ignore ack
+  /* get a reading from the mouse */
+  mouse_write(0xeb);  /* give me data! */
+  mouse_read();      /* ignore ack */
   mstat = mouse_read();
   mx = mouse_read();
   my = mouse_read();
 
-  Serial.print("X: ");
-  Serial.println(mx);
-  Serial.print("   Y: ");
-  Serial.println(my);
-
-  delay(50);
+  /* send the data back up */
+  Serial.print(mstat, BIN);
+  Serial.print("\tX=");
+  Serial.print(mx, DEC);
+  Serial.print("\tY=");
+  Serial.print(my, DEC);
+  Serial.println();
+  delay(20);  /* twiddle */
 }
